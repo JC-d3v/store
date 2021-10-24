@@ -1,0 +1,12 @@
+.card {
+  margin: 5px;
+  min-height: 180px;
+  min-width: 300px;
+  max-width: 300px;
+  height: 100%;
+}
+
+button {
+  /* font-size: 3.5rem; */
+  width: 100%;
+}
