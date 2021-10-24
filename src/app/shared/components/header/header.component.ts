@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-header',
   template: `
     <mat-toolbar color="primary">
-      <span>My Great Store -</span>
+      <span>My Great Store</span>
       <span class="spacer"></span>
       <app-cart></app-cart>
     </mat-toolbar>
