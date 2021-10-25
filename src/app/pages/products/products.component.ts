@@ -6,7 +6,14 @@ import { ShoppingCartService } from 'src/app/shared/services/shopping-cart.servi
 
 @Component({
   selector: 'app-products',
-  templateUrl: './products.component.html',
+  template: `<section class="products">
+    <app-product
+      (addToCartClick)="addToCart($event)"
+      [product]="product"
+      *ngFor="let product of products"
+    >
+    </app-product>
+  </section> `,
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent implements OnInit {
@@ -26,5 +33,10 @@ export class ProductsComponent implements OnInit {
   addToCart(product: Product): void {
     console.log(`Add to Cart `, product);
     this.shoppingCartSvc.updateCart(product);
+    console.log(`msg h1
+    sas
+    ewewe
+    we
+    wewewe`);
   }
 }
